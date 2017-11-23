@@ -1,0 +1,64 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.hotel-listing{
+	.hotel-list-item{
+		margin: 1em 0;
+		padding: 1em;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+
+		&:hover{
+			background-color: rgb(232,240,251);
+		}
+
+		h4{
+			margin-bottom: 3px;
+			margin-top: 3px;
+			a{
+				font-size: 20px;
+				color: #07c;
+
+				&:hover{
+					color: gold;
+				}
+			}
+		}
+		.city{
+			a{
+				color: #07c;
+				text-decoration: underline;
+				font-size: 13px;
+				font-weight: bold;
+			}
+		}
+		.intro{
+			font-size: .9em;
+			margin: 10px 0;
+		}
+		.credit-card-reservation{
+				font-size: 13px;
+				font-weight: bold;
+				.cr-true{
+					color: brown;
+				}
+				.cr-false{
+					color: green
+				}
+		}
+
+		.link_btn{
+			text-align: center;
+			a{
+			  background-color: #07c;
+		    color: #fff;
+		    display: inline-block;
+		    font-weight: bold;
+		    border: 2px solid #fff;
+		    box-shadow: 0 0 3px #aaa;
+		    padding: .7em 1em;
+		    margin-top: 2em;
+			}
+		}
+	}
+}
