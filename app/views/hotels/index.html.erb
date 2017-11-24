@@ -1,38 +1,8 @@
-<div class="container hotel-listing">
-	<h3>Recommended for you.</h3>
+<%= render 'search' %>
+
+<div class="container bounty-hotel-listing">
 	<div class="row">
-		<% @hotels.each do |hotel| %>
-			<div class="col-md-8 hotel-list-item">
-				<div class="row">
-
-					<div class="col-sm-3">
-						<%= link_to image_tag(hotel.image_url_300, class: "img-responsive"), "" %>
-					</div>
-
-					<div class="col-sm-6">
-						<h4><%= link_to hotel.name, "" %></h4>
-						<div class="city">
-							<%= link_to "#{hotel.city.name} - see on map", "" %>
-						</div>
-						<div class="intro">
-							<%= hotel.intro_message %>
-						</div>
-						<div class="credit-card-reservation">
-							<% if hotel.creditcard_required %>
-								<span class="cr-true">Reservation possible without a credit card</span>
-							<% else %>
-								<span class="cr-false">Reservation possible without a credit card</span>
-							<% end %>
-						</div>
-					</div>
-
-					<div class="col-sm-3">
-						<div class="link_btn">
-							<%= link_to "View details", "" %>
-						</div>
-					</div>
-				</div>
-			</div>
-		<% end %>
+		<h3>Recommended for you.</h3>
+		<%= render 'hotels' %>
 	</div>
 </div>

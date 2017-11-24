@@ -1,7 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.hotel-listing{
+.bounty-hotel-listing{
+	h3{
+		font-size: 1.3em;
+	}
 	.hotel-list-item{
 		margin: 1em 0;
 		padding: 1em;
@@ -47,6 +50,16 @@
 				}
 		}
 
+		.extras{
+			margin-top: 10px;
+			font-size: 13px;
+
+			span{
+				display: inline-block;
+				margin-right: 2em;
+				border-bottom: 1px dotted #07c;
+			}
+		}
 		.link_btn{
 			text-align: center;
 			a{
@@ -58,7 +71,36 @@
 		    box-shadow: 0 0 3px #aaa;
 		    padding: .7em 1em;
 		    margin-top: 2em;
+
+		    &:hover{
+		    	text-decoration: none;
+		    	background-color: darken(#07c, 20)
+		    }
 			}
 		}
+	}
+}
+
+.search-control{
+	margin-top: 2em;
+	margin-bottom: 2em;
+
+	.search-box{
+		input[type=text]{
+			display: inline-block;
+			width: 70%;
+			padding: .5em 1em; 
+			outline: none;
+			border: 1px solid #07c;
+			position: relative;
+			left: 5px;
+		}
+
+		input[type=submit]{
+			padding: .5em 1em;
+			background-color: #07c;
+			color: #fff;
+		}
+
 	}
 }

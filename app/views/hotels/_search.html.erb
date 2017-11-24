@@ -1,0 +1,12 @@
+<div class="container">
+	<div class="row search-control">
+		<div class="col-md-8">
+			<%= form_tag("/hotels/search", method: :get) do %>
+				<div class="search-box">
+					<%= text_field_tag(:key, '', placeholder: "Enter city name") %>
+					<%= submit_tag(:search) %>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</div>

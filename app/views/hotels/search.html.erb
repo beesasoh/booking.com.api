@@ -1,2 +1,8 @@
-<h1>Hotels#search</h1>
-<p>Find me in app/views/hotels/search.html.erb</p>
+<%= render 'search' %>
+
+<div class="container bounty-hotel-listing">
+	<div class="row">
+		<h3>Search results for: <%= @key %></h3>
+		<%= render 'hotels' %>
+	</div>
+</div>
